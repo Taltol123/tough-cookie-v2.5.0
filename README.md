@@ -20,18 +20,18 @@ npm install tough-cookie@2.5.0 && node index.js
 ```
 
 Expected output:
-```
+
 EXPLOITED SUCCESSFULLY
-```
+
 
 ```bash
 npm install ./tough-cookie-2.5.0-PATCHED.tgz && node index.js
 ```
 
 Expected output:
-```
+
 EXPLOIT FAILED
-```
+
 
 ## Test Execution
 
@@ -52,7 +52,7 @@ These tests failed because the Expires attribute contains a hardcoded date that 
 Since the cookie is considered expired upon parsing, the cookie is not stored, and the test fails. 
 Because these failures are not related to the patched vulnerability, the tests were excluded from the run.
 
-```
+---
 
 ## Files
 
