@@ -1,4 +1,5 @@
 # CVE-2023-26136 Fix for tough-cookie 2.5.0
+**By** : Tal Yehezkel
 
 This project demonstrates the **Prototype Pollution** vulnerability (CVE-2023-26136) in version `2.5.0` of the [`tough-cookie`](https://github.com/salesforce/tough-cookie) library.
 
@@ -65,7 +66,7 @@ You can find all related files in the shared Drive folder:
 | `index.js`                        | The exploit script that demonstrates the vulnerability.                    |
 | `changes.diff`                    | Diff file showing changes compared to the tough-cookie 2.5.0 git tag.
 | `tough-cookie-2.5.0-PATCHED.tgz`  | Tarball of the patched package version with the vulnerability fixed.       |
-| `CI Tools Experience.txt`               | A list of all the CI tools I have used in the past and my level of expertise with each. |
+| `CI Tools Experience.pdf`               | A list of all the CI tools I have used in the past and my level of expertise with each. |
 
 ---
 
