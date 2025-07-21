@@ -9,26 +9,36 @@ If the library does not properly validate domain names, this can result in **mod
 
 ---
 
-##Exploit Script
+## Exploit Script
 
 The `index.js` file simulates setting a malicious cookie with domain `__proto__` and checks whether the object prototype was polluted.
 
 ## How to Run
 
+```bash
 npm install tough-cookie@2.5.0 && node index.js
+```
 
-    output should be - EXPLOITED SUCCESSFULLY
+Expected output:
+```
+EXPLOITED SUCCESSFULLY
+```
 
- npm install ./tough-cookie-2.5.0-PATCHED.tgz && node index.js
-    
-    output should be - EXPLOIT FAILED
+```bash
+npm install ./tough-cookie-2.5.0-PATCHED.tgz && node index.js
+```
 
+Expected output:
+```
+EXPLOIT FAILED
 ```
 
 ## Test Execution
 
 ## How to Run
-    npm run test
+```bash
+npm test
+```
 
 ## Output
 > vows test/*_test.js    
