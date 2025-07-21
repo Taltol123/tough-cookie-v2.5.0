@@ -47,12 +47,14 @@ npm test
 ·································· ·········································· ······ ························ ··············· ··························································· ········································· ······························································································································································································································································································· ··············· ········ ················································································································ · ········ ·····  
   ✓ OK » 657 honored (9.477s)   
 
-
-Three test cases were removed from the test suite: 0002, COMMA0006, and COMMA0007.
-These tests failed because the Expires attribute contains a hardcoded date that is already in the past (Fri, 07 Aug 2019).
-Since the cookie is considered expired upon parsing, the cookie is not stored, and the test fails.
-These failures occur even in the original 2.5.0 version of tough-cookie, before any modifications I made.
-Because these failures are not related to the patched vulnerability, the tests were excluded from the run.
+Notes:
+1.Three test cases were removed from the test suite: 0002, COMMA0006, and COMMA0007.
+  These tests failed because the Expires attribute contains a hardcoded date that is already in the past (Fri, 07 Aug 2019).
+  Since the cookie is considered expired upon parsing, the cookie is not stored, and the test fails.
+  These failures occur even in the original 2.5.0 version of tough-cookie, before any modifications I made.
+  Because these failures are not related to the patched vulnerability, the tests were excluded from the run.
+2.A new test, prototype_pollution_test.js, was added.
+  This test checks that there is no prototype pollution (CVE-2023-26136).
 
 ---
 
